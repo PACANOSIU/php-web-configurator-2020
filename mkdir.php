@@ -1,4 +1,5 @@
 <?php
+	ob_start();
 	if(!is_dir("CLASS"))
 	{
 		mkdir("CLASS");
