@@ -1,4 +1,5 @@
 <?php
+	//Copyright PACANOSIU Development productions :D
 	class ExtensionController 
 	{   
 		private $active_page;    
