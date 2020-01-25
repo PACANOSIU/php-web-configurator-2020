@@ -10,7 +10,7 @@
 		$_config="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/config.php";
 		$_new_config="config.php";
 		copy($_config,$_new_config);
-		header("location:konfigurator.php");
+		header("location:configurator.php");
 	}	
 	echo
 		'<!DOCTYPE html>
