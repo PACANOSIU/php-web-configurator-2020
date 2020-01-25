@@ -1,4 +1,5 @@
 <?php
+	//Copyright PACANOSIU Development productions :D
 	class WebHeaderLogoAndTitle 
 	{
 		static public function load($MODULE) 
