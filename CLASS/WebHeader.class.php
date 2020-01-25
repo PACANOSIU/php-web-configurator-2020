@@ -126,7 +126,7 @@
 								
 								<div class="header_center_menu_main_title">
 									<a href="/">
-										<img src="graphics/icon_games.png" style="height:15px;width:25px;">
+										<img src="" style="height:15px;width:25px;">
 										HCMT2
 									</a>
 									<div class="pole_menu" style="min-width:110px;">
@@ -161,7 +161,7 @@
 								
 								<div class="header_center_menu_main_title">
 									<a href="">
-										<img src="graphics/icon_programming.png" style="height:15px;width:25px;">
+										<img src="" style="height:15px;width:25px;">
 										HCMT3
 									</a>
 									<div class="pole_menu" style="min-width:163px;">
@@ -211,7 +211,7 @@
 								<div class="header_center_menu_main_title" style="min-width:139px;">
 									<a href="">
 										HCMT4
-										<img src="graphics/icon_software.png" style="height:15px;width:15px;">
+										<img src="" style="height:15px;width:15px;">
 									</a>
 									<div class="pole_menu">
 										<div class="h_c_m_s_t">
