@@ -5,7 +5,7 @@ You only need to download one <a href="https://1drv.ms/u/s!ArLTcf_BgRqnggkRnSmos
 ```
 <?php
 	//Copyright PACANOSIU Development productions :D
-	$_index="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/index.php";
+	$_index="https://raw.githubusercontent.com/PACANOSIU/php-web-configurator-2020/master/index.php";
 	$_new_index="index.php";
 	if(copy($_index,$_new_index))
 	{
