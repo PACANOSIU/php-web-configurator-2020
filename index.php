@@ -115,13 +115,13 @@ header("location:konfigurator.php");
 						To be up to date <a href="">SUBSCRIBE</a>.
 						<br />
 						<form method="GET">
-							<input style="font-family:Montserrat,sans-serif;font-size:20px;padding:10px;margin:10px;cursor:pointer;" type="submit" name="konfigurator" value="ROZPOCZNIJ KONFIGURACJĘ SWOJEJ STRONY">
+							<input style="font-family:Montserrat,sans-serif;font-size:20px;padding:10px;margin:10px;cursor:pointer;" type="submit" name="konfigurator" value="START CONFIGURING YOUR WEBSITE">
 						</form>
 					</div>
 				</div>
 			</body>
 			<footer style="position:absolute;bottom:1px;right:1px;font-size:10px;font-family:Montserrat,sans-serif;">
-				Konfigurator PACANOSIU BETA 2020.01
+				PACANOSIU BETA Configurator 2020.01
 			</footer>
 		</html>'
 	;
