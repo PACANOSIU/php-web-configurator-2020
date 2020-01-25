@@ -1,21 +1,57 @@
 <?php
+	$_error_nazwa_uzytkownika_bazy_danych=NULL;
+	$_error_nazwa_bazy_danych=NULL;
+	$_error_host_bazy_danych=NULL;
 	if($_POST)
 	{		
+		mkdir("DB");
+		set_include_path(get_include_path().PATH_SEPARATOR ."DB");
 		if($_POST["konfigurator"]=='pzbdikd')
 		{
-			echo$_POST["nazwa_uzytkownika_bazy_danych"];
-			echo'<br />';
-			echo$_POST["haslo_uzytkownika_bazy_danych"];
-			echo'<br />';
-			echo$_POST["nazwa_bazy_danych"];
-			echo'<br />';
-			echo$_POST["konfigurator"];
+			$_ERROR=FALSE;
+			if($_POST["nazwa_uzytkownika_bazy_danych"]=='')
+			{
+				$_error_nazwa_uzytkownika_bazy_danych=
+					'color:rgb(255,0,0);'
+				;
+				$_ERROR=TRUE;
+			}
+			if($_POST["nazwa_bazy_danych"]=='')
+			{
+				$_error_nazwa_bazy_danych=
+					'color:rgb(255,0,0);'
+				;
+				$_ERROR=TRUE;
+			}
+			if($_POST["host_bazy_danych"]=='')
+			{
+				$_error_host_bazy_danych=
+					'color:rgb(255,0,0);'
+				;
+				$_ERROR=TRUE;
+			}
+			if($_ERROR==FALSE)
+			{
+				$_kreator_plikow=fopen("db_".$_POST["nazwa_bazy_danych"].".php","w")or die("Unable to open file!");
+		$_zawartosc_pliku_db=
+	'$db_host = "'.$_POST["host_bazy_danych"].'";
+	$db_user_name = "'.$_POST["nazwa_uzytkownika_bazy_danych"].'";
+	$db_user_password = "'.$_POST["haslo_uzytkownika_bazy_danych"].'";
+	$db_name = "'.$_POST["nazwa_bazy_danych"].'";
+	$db_connect = @new mysqli($db_host, $db_user_name, $db_user_password, $db_name);'
+				;
+			$_zawartosc_kreowanego_pliku="<?php
+	$_zawartosc_pliku_db
+?>";
+			fwrite($_kreator_plikow,$_zawartosc_kreowanego_pliku);
+			fclose($_kreator_plikow);
+			}
 		}
 		elseif($_POST["konfigurator"]=='pikd')
 		{
-			echo$_POST["konfigurator"];
-			echo'<br />';
-			echo'KONFIGURACJA BEZ POŁACZENIA Z BAZĄ DANYCH';
+			$_db="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/db.php";
+			$_new_db="DB/db.php";
+			copy($_db,$_new_db);
 		}
 	}
 	echo
@@ -26,11 +62,11 @@
 			</head>
 			<body>
 				<div style="text-align:center;font-family:Montserrat,sans-serif;">
-					<form method="POST">
+					<form method="POST" action="">
 						<h1>
 							Database connection
 						</h1>
-						<div style="margin:10px;">
+						<div style="margin:10px;'.$_error_nazwa_uzytkownika_bazy_danych.'">
 							Enter the database username
 							<br />
 							for example 
@@ -47,7 +83,7 @@
 							<br />
 							<input style="width:300px;margin:10px;" type="password" name="haslo_uzytkownika_bazy_danych">
 						</div>
-						<div style="margin:10px;">
+						<div style="margin:10px;'.$_error_nazwa_bazy_danych.'">
 							Enter the database name
 							<br />
 							(for example: 
@@ -57,7 +93,7 @@
 							<br />
 							<input style="width:300px;margin:10px;" type="text" name="nazwa_bazy_danych">
 						</div>
-						<div style="margin:10px;">
+						<div style="margin:10px;'.$_error_host_bazy_danych.'">
 							Enter the database host
 							<br />
 							<input style="width:300px;margin:10px;" type="text" name="host_bazy_danych">
