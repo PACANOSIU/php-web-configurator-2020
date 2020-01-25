@@ -341,9 +341,6 @@
 									<div class="header_bottom_menu_main_title">
 										TEXT 1
 									</div>
-									<div class="header_bottom_menu_main_title">
-										TEXT 1
-									</div>
 								</div>
 								
 							</div>
