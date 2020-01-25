@@ -1,4 +1,5 @@
 <?php
+	/*Copyright PACANOSIU Development productions :D*/
 	ob_start();
 	$_AbsoluteURL=(isset($_SERVER["HTTPS"])&&$_SERVER["HTTPS"]=="on")?"https://":"http://";
 	$_dirCat=dirname($_SERVER["PHP_SELF"]);
