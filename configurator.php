@@ -28,12 +28,12 @@
 				<div style="text-align:center;font-family:Montserrat,sans-serif;">
 					<form method="POST">
 						<h1>
-							Połączenie z bazą danych
+							Database connection
 						</h1>
 						<div style="margin:10px;">
-							Wprowadź nazwę użytkownika bazy danych
+							Enter the database username
 							<br />
-							przykładowo 
+							for example 
 							<i>
 								root
 							</i>
@@ -41,28 +41,28 @@
 							<input style="width:300px;margin:10px;" type="text" name="nazwa_uzytkownika_bazy_danych">
 						</div>
 						<div style="margin:10px;">
-							Wprowadź hasło użytkownika bazy danych
+							Enter the database user password
 							<br />
-							(gdy brak nic nie wpisuj, zostaw puste pole)
+							(in the absence of not anything not write, leave blank)
 							<br />
 							<input style="width:300px;margin:10px;" type="password" name="haslo_uzytkownika_bazy_danych">
 						</div>
 						<div style="margin:10px;">
-							Wprowadź nazwę bazy danych
+							Enter the database name
 							<br />
 							<input style="width:300px;margin:10px;" type="text" name="nazwa_bazy_danych">
 						</div>
 						<div style="margin:10px;">
-							Wprowadź host bazy danych
+							Enter the database host
 							<br />
 							<input style="width:300px;margin:10px;" type="text" name="host_bazy_danych">
 						</div>
 						<div align="center">
 							<button style="display:block;font-family:Montserrat,sans-serif;font-size:20px;padding:10px;margin:10px;cursor:pointer;" type="submit" name="konfigurator" value="pzbdikd">
-								POŁĄCZ Z BAZĄ DANYCH I KONFIGURUJ DALEJ
+								CONNECT WITH DATABASE AND CONFIGURE NEXT
 							</button>
 							<button style="font-family:Montserrat,sans-serif;font-size:20px;padding:10px;margin:10px;cursor:pointer;" type="submit" name="konfigurator" value="pikd">
-								POMIŃ I KONFIGURUJ DALEJ
+								SKIP AND CONFIGURE NEXT
 							</button>
 						</div>
 					</form>
