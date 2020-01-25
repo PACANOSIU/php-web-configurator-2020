@@ -1,18 +1,12 @@
 <?php
 if($_GET)
 {
-	$_config="https://iepa.pl/copy/config.php";
+	$_htaccess="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/.htaccess";
+	$_new_htaccess=".htaccess";
+	copy($_htaccess,$_new_htaccess);	
+	$_config="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/config.php";
 	$_new_config="config.php";
 	copy($_config,$_new_config);
-	$_konfigurator_pikiow=fopen(".htaccess","w")or die("Unable to open file!");	
-	$_zawartosc_przesylu_htaccess="Options FollowSymLinks
-	RewriteEngine On
-	RewriteRule ^([0-9a-zA-Z\-\#]+)/?$ index.php?page=$1 [L]
-	RewriteCond %{HTTPS} !=on
-	php_value date.timezone 'Europe/Warsaw'";
-	fwrite($_konfigurator_pikiow,$_zawartosc_przesylu_htaccess);
-	fclose($_konfigurator_pikiow);
-	
 $_POST='$_POST';
 $_host_bazy_danych='$_POST["host_bazy_danych"]';
 $_post_nazwa_uzytkownik_bazy_danych='$_POST["nazwa_uzytkownika_bazy_danych"]';
