@@ -104,7 +104,10 @@
 		}
 ?>'
 		;
-		unlink("configurator.php");	
+		fwrite($_kreator_plikow,$_przepisanie_indexu);
+		fclose($_kreator_plikow);
+		unlink("configurator.php");
+		header("location:/");
 		
 	}
 	echo
