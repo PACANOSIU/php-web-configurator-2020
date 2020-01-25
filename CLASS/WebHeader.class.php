@@ -32,7 +32,7 @@
 												<div style="padding:5px;width:460px;">
 													<div class="h_c_m_s_t_pole_title">
 														<div style="font-size:14px;">
-															<a href="27hd-aorus-elite-red-ps4-pro">
+															<a href="">
 																Exp.Title
 															</a>
 														</div>														
@@ -43,12 +43,12 @@
 																</a>
 															</div>
 															<div style="margin:6px;">
-																<a href="eng/">
+																<a href="">
 																	Exp.Link.
 																</a>
 															</div>
 															<div style="margin:6px;">
-																<a href="eng/">
+																<a href="">
 																	Exp.Link.
 																</a>
 															</div>
