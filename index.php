@@ -108,11 +108,11 @@ header("location:konfigurator.php");
 			<body>
 				<div style="text-align:center;font-family:Montserrat,sans-serif;">
 					<div>
-						Witaj w profesjonalnym konfiguratorze stron internetowych "PACANOSIU"
+						Welcome to the "PACANOSIU" website configurator
 						<br />
-						Dziękuję za zinteresowanie moim produktem.
+						Thank you for your interest in my product.
 						<br />
-						Aby być na bierząco <a href="">SUBSKRYBUJ</a>.
+						To be up to date <a href="">SUBSCRIBE</a>.
 						<br />
 						<form method="GET">
 							<input style="font-family:Montserrat,sans-serif;font-size:20px;padding:10px;margin:10px;cursor:pointer;" type="submit" name="konfigurator" value="ROZPOCZNIJ KONFIGURACJĘ SWOJEJ STRONY">
