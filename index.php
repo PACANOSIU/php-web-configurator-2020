@@ -3,13 +3,13 @@
 	if($_GET)
 	{
 		session_start();
-		$_konfigurator="https://raw.githubusercontent.com/PACANOSIU//php-web-configurator-2020/master/configurator.php";
+		$_konfigurator="https://raw.githubusercontent.com/PACANOSIU/php-web-configurator-2020/master/configurator.php";
 		$_new_konfigurator="configurator.php";
 		copy($_konfigurator,$_new_konfigurator);
-		$_htaccess="https://raw.githubusercontent.com/PACANOSIU//php-web-configurator-2020/master/.htaccess";
+		$_htaccess="https://raw.githubusercontent.com/PACANOSIU/php-web-configurator-2020/master/.htaccess";
 		$_new_htaccess=".htaccess";
 		copy($_htaccess,$_new_htaccess);	
-		$_config="https://raw.githubusercontent.com/PACANOSIU//php-web-configurator-2020/master/config.php";
+		$_config="https://raw.githubusercontent.com/PACANOSIU/php-web-configurator-2020/master/config.php";
 		$_new_config="config.php";
 		copy($_config,$_new_config);
 		require_once("config.php");
