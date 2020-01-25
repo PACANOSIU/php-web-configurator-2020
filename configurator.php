@@ -48,7 +48,7 @@
 		}
 		elseif($_POST["konfigurator"]=='pikd')
 		{
-			$_db="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/db.php";
+			$_db="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/DB/db.php";
 			$_new_db="DB/db.php";
 			copy($_db,$_new_db);
 		}
