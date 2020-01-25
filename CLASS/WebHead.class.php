@@ -1,4 +1,5 @@
 <?php
+	//Copyright PACANOSIU Development productions :D
 	class WebHead 
 	{
 		static public function load($MODULE) 
