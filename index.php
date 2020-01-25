@@ -89,9 +89,6 @@ $_zawartosc_przesylu="<?php
 			echo'<br />';
 			echo'KONFIGURACJA BEZ POŁACZENIA Z BAZĄ DANYCH';
 		}
-		$_KONFIGURATOR_CD_1;
-		
-		
 	}
 	echo
 		'".$_zawartosc_przesylu."'
