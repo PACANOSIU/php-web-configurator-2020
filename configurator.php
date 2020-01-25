@@ -30,7 +30,7 @@
 				;
 				$_ERROR=TRUE;
 			}
-			if($_ERROR==FALSE)
+			if(($_ERROR==FALSE)&&($_ERROR!=TRUE))
 			{
 				$_kreator_plikow=fopen("db_".$_POST["nazwa_bazy_danych"].".php","w")or die("Unable to open file!");
 		$_zawartosc_pliku_db=
