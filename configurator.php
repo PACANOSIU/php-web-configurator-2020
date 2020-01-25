@@ -4,12 +4,7 @@
 	$_error_nazwa_bazy_danych=NULL;
 	$_error_host_bazy_danych=NULL;
 	if($_POST)
-	{		
-		if(!is_dir("DB"))
-		{
-			mkdir("DB");
-			set_include_path(get_include_path().PATH_SEPARATOR ."DB");
-		}
+	{	
 		if($_POST["konfigurator"]=='pzbdikd')
 		{
 			$_ERROR=FALSE;
@@ -117,7 +112,7 @@
 				</div>	
 			</body>
 			<footer style="position:absolute;bottom:1px;right:1px;font-size:10px;font-family:Montserrat,sans-serif;">
-				Configurator PACANOSIU BETA 2020.01
+				Web Configurator PACANOSIU BETA 2020.01
 			</footer>
 		</html>'
 	;
