@@ -1,4 +1,5 @@
 <?php
+	//Copyright PACANOSIU Development productions :D
 	class WebWritePoleMenuTop 
 	{
 		static public function load($MODULE) 
