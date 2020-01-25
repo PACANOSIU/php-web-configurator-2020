@@ -52,6 +52,9 @@
 			$_new_db="DB/db.php";
 			copy($_db,$_new_db);
 		}
+		$_HDcss="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/CSS/FHDstyle.css";
+		$_new_HDcss="CSS/HDcss.css";
+		copy($_HDcss,$_new_HDcss);
 	}
 	echo
 		'<!DOCTYPE html>
