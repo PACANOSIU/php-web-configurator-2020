@@ -53,8 +53,8 @@
 			copy($_db,$_new_db);
 		}
 		
-		$_HDcss="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/CSS/FHDstyle.css";
-		$_new_HDcss="CSS/HDcss.css";
+		$_HDcss="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/CSS/HDstyle.css";
+		$_new_HDcss="CSS/HDstyle.css";
 		copy($_HDcss,$_new_HDcss);
 		
 		$_ExtensionController="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/CLASS/Managers/ExtensionController.class.php";
