@@ -29,8 +29,4 @@
 		mkdir("LIBRARY");
 		set_include_path(get_include_path().PATH_SEPARATOR ."LIBRARY");
 	}
-	spl_autoload_register(function($_className)
-	{
-		include_once($_className.".class.php");
-	});
 ?>
