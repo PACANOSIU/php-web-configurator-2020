@@ -10,5 +10,9 @@
 	$_mkdir="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/mkdir.php";
 	$_new_mkdir="mkdir.php";
 	copy($_mkdir,$_new_mkdir);
-	require_once"mkdir.php";
+	require_once"mkdir.php";	
+	spl_autoload_register(function($_className)
+	{
+		include_once($_className.".class.php");
+	});
 ?>
