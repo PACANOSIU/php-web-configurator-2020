@@ -50,6 +50,11 @@
 						<div style="margin:10px;">
 							Enter the database name
 							<br />
+							(for example: 
+							<i>
+								database_1
+							</i>)
+							<br />
 							<input style="width:300px;margin:10px;" type="text" name="nazwa_bazy_danych">
 						</div>
 						<div style="margin:10px;">
@@ -64,6 +69,9 @@
 							<button style="font-family:Montserrat,sans-serif;font-size:20px;padding:10px;margin:10px;cursor:pointer;" type="submit" name="konfigurator" value="pikd">
 								SKIP AND CONFIGURE NEXT
 							</button>
+						</div>
+						<div>
+							no worries, you will be able to connect to the database later
 						</div>
 					</form>
 				</div>	
