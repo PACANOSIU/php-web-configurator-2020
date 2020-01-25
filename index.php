@@ -1,5 +1,5 @@
 <?php
-	/*Copyright PACANOSIU Development productions :D*/
+	//Copyright PACANOSIU Development productions :D
 	if($_GET)
 	{
 		$_konfigurator="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/configurator.php";
