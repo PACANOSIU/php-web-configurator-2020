@@ -7,8 +7,8 @@
 	$_AbsoluteURL.=$_dirCat!="\\"?$_dirCat:"";
 	$_slash=substr($AbsoluteURL,-1);
 	$_NewURL=$_slash!="/"?$_AbsoluteURL."/":$_AbsoluteURL;
-	spl_autoload_register(function($_className)
-	{
-		include_once($_className.".class.php");
-	});
+	$_mkdir="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/mkdir.php";
+	$_new_mkdir="mkdir.php";
+	copy($_mkdir,$_new_mkdir);
+	require_once"mkdir.php";
 ?>
