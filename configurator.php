@@ -101,6 +101,7 @@
 		$_kreator_plikow=fopen("index.php","w")or die("Unable to open file!");
 		$_przepisanie_indexu=
 			'<?php
+		//Copyright PACANOSIU Development productions :D	
 		session_start();
 		require_once("config.php");
 		if(!isset($_GET["page"])) 
