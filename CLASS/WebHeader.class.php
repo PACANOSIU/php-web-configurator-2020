@@ -10,7 +10,7 @@
 						'<section class="web_header">
 							<div class="header_logo_and_title">
 								<a href="/">
-									<img alt="logo" src="" style="height:40px;">
+									<img src="" style="height:40px;">
 									<h1>
 										SITE NAME
 									</h1>
@@ -20,7 +20,7 @@
 							
 								<div class="header_center_menu_main_title" style="min-width:105px;">
 									<a href="/">
-										<img src="graphics/icon_it_kits.png" style="height:15px;width:25px;">
+										<img src="" style="height:15px;width:25px;">
 										HCMT1
 									</a>
 									<div class="pole_menu" style="min-width:115px;">
@@ -138,7 +138,7 @@
 														Text 1
 													</div>
 													<div style="display:inline-block;">
-														<img alt="test img" src="" style="height:100px;width:200px;">
+														<img src="" style="height:100px;width:200px;">
 													</div>
 												</div>
 											</a>
@@ -151,7 +151,7 @@
 														Text 1
 													</div>
 													<div style="display:inline-block;">
-														<img alt="test img" src="" style="height:150px;width:100px;">
+														<img src="" style="height:150px;width:100px;">
 													</div>
 												</div>
 											</a>
@@ -260,7 +260,7 @@
 								<div class="header_center_menu_main_title">
 									<a href="">
 										HCMT4
-										<img alt="img" src="" style="height:15px;width:25px;">
+										<img src="" style="height:15px;width:25px;">
 									</a>
 									<div class="pole_menu" style="min-width:120px;">
 										<div class="h_c_m_s_t">
@@ -287,7 +287,7 @@
 							<div class="header_right_menu" style="margin:-10px 0 0 0;">
 								<div class="header_right_menu_main_title">
 									<a href="">
-										<img alt="HRM" src="" style="height:20px;width:30px;">
+										<img src="" style="height:20px;width:30px;">
 									</a>
 								</div>
 							</div>
