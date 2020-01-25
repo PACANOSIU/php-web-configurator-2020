@@ -1,5 +1,5 @@
 <?php
-  if(!is_dir("CLASS"))
+  		if(!is_dir("CLASS"))
 		{
 			mkdir("CLASS");
 			set_include_path(get_include_path().PATH_SEPARATOR ."CLASS");
