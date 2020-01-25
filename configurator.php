@@ -52,9 +52,63 @@
 			$_new_db="DB/db.php";
 			copy($_db,$_new_db);
 		}
+		
 		$_HDcss="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/CSS/FHDstyle.css";
 		$_new_HDcss="CSS/HDcss.css";
 		copy($_HDcss,$_new_HDcss);
+		
+		$_ExtensionController="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/CLASS/Managers/ExtensionController.class.php";
+		$_new_ExtensionController="CLASS/Managers/ExtensionController.class.php";
+		copy($_ExtensionController,$_new_ExtensionController);
+		
+		$_WebBars="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/CLASS/WebBars.class.php";
+		$_new_WebBars="CLASS/WebBars.class.php";
+		copy($_WebBars,$_new_WebBars);
+		$_WebFooter="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/CLASS/WebFooter.class.php";
+		$_new_WebFooter="CLASS/WebFooter.class.php";
+		copy($_WebFooter,$_new_WebFooter);
+		$_WebHead="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/CLASS/WebHead.class.php";
+		$_new_WebHead="CLASS/WebHead.class.php";
+		copy($_WebHead,$_new_WebHead);
+		$_WebHeader="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/CLASS/WebHeader.class.php";
+		$_new_WebHeader="CLASS/WebHeader.class.php";
+		copy($_WebHeader,$_new_WebHeader);
+		$_WebIndex="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/CLASS/WebIndex.class.php";
+		$_new_WebIndex="CLASS/WebIndex.class.php";
+		copy($_WebIndex,$_new_WebIndex);
+		$_WebLegs="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/CLASS/WebLegs.class.php";
+		$_new_WebLegs="CLASS/WebLegs.class.php";
+		copy($_WebLegs,$_new_WebLegs);
+		$_WebReklamaHeader="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/CLASS/WebReklamaHeader.class.php";
+		$_new_WebReklamaHeader="CLASS/WebReklamaHeader.class.php";
+		copy($_WebReklamaHeader,$_new_WebReklamaHeader);
+		$_WebWritePole="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/CLASS/WebWritePole.class.php";
+		$_new_WebWritePole="CLASS/WebWritePole.class.php";
+		copy($_WebWritePole,$_new_WebWritePole);
+		$_WebWritePoleMenuTop="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/CLASS/WebWritePoleMenuTop.class.php";
+		$_new_WebWritePoleMenuTop="CLASS/WebWritePoleMenuTop.class.php";
+		copy($_WebWritePoleMenuTop,$_new_WebWritePoleMenuTop);
+		
+		$_kreator_plikow=fopen("index.php","w")or die("Unable to open file!");
+		$_przepisanie_indexu=
+			'<?php
+	if($_SERVER["REMOTE_ADDR"]=="::1")
+	{
+		session_start();
+		require_once("config.php");
+		if(!isset($_GET["page"])) 
+		{
+			WebIndex::load("IndexIndex");   
+		} 
+		else 
+		{    
+			$mp = new ExtensionController($_GET["page"]);    
+		}
+	}
+?>'
+		;
+		unlink("configurator.php");	
+		
 	}
 	echo
 		'<!DOCTYPE html>
