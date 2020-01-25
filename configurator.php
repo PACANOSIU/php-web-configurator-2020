@@ -55,12 +55,10 @@
 		
 		$_HDcss="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/CSS/HDstyle.css";
 		$_new_HDcss="CSS/HDstyle.css";
-		copy($_HDcss,$_new_HDcss);
-		
+		copy($_HDcss,$_new_HDcss);		
 		$_ExtensionController="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/CLASS/Managers/ExtensionController.class.php";
 		$_new_ExtensionController="CLASS/Managers/ExtensionController.class.php";
-		copy($_ExtensionController,$_new_ExtensionController);
-		
+		copy($_ExtensionController,$_new_ExtensionController);		
 		$_WebBars="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/CLASS/WebBars.class.php";
 		$_new_WebBars="CLASS/WebBars.class.php";
 		copy($_WebBars,$_new_WebBars);
@@ -88,7 +86,15 @@
 		$_WebWritePoleMenuTop="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/CLASS/WebWritePoleMenuTop.class.php";
 		$_new_WebWritePoleMenuTop="CLASS/WebWritePoleMenuTop.class.php";
 		copy($_WebWritePoleMenuTop,$_new_WebWritePoleMenuTop);
-		
+		$_WebHeaderBottomMenu="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/CLASS/WebHeaderBottomMenu.class.php";
+		$_new_WebHeaderBottomMenu="CLASS/WebHeaderBottomMenu.class.php";
+		copy($_WebHeaderBottomMenu,$_new_WebHeaderBottomMenu);		
+		$_WebHeaderCenterMenu="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/CLASS/WebHeaderCenterMenu.class.php";
+		$_new_WebHeaderCenterMenu="CLASS/WebHeaderCenterMenu.class.php";
+		copy($_WebHeaderCenterMenu,$_new_WebHeaderCenterMenu);		
+		$_WebHeaderRightMenu="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/CLASS/WebHeaderRightMenu.class.php";
+		$_new_WebHeaderRightMenu="CLASS/WebHeaderRightMenu.class.php";
+		copy($_WebHeaderRightMenu,$_new_WebHeaderRightMenu);		
 		$_kreator_plikow=fopen("index.php","w")or die("Unable to open file!");
 		$_przepisanie_indexu=
 			'<?php
