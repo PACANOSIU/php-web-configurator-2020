@@ -94,7 +94,10 @@
 		copy($_WebHeaderCenterMenu,$_new_WebHeaderCenterMenu);		
 		$_WebHeaderRightMenu="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/CLASS/WebHeaderRightMenu.class.php";
 		$_new_WebHeaderRightMenu="CLASS/WebHeaderRightMenu.class.php";
-		copy($_WebHeaderRightMenu,$_new_WebHeaderRightMenu);		
+		copy($_WebHeaderRightMenu,$_new_WebHeaderRightMenu);
+		$_WebHeaderLogoAndTitle="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/CLASS/WebHeaderLogoAndTitle.class.php";
+		$_new_WebHeaderLogoAndTitle="CLASS/WebHeaderLogoAndTitle.class.php";
+		copy($_WebHeaderLogoAndTitle,$_new_WebHeaderLogoAndTitle);
 		$_kreator_plikow=fopen("index.php","w")or die("Unable to open file!");
 		$_przepisanie_indexu=
 			'<?php
