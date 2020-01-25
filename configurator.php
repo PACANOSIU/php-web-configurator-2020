@@ -1,4 +1,5 @@
 <?php
+	/*Copyright PACANOSIU Development productions :D*/
 	$_error_nazwa_uzytkownika_bazy_danych=NULL;
 	$_error_nazwa_bazy_danych=NULL;
 	$_error_host_bazy_danych=NULL;
