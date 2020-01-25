@@ -69,7 +69,7 @@
 				</div>	
 			</body>
 			<footer style="position:absolute;bottom:1px;right:1px;font-size:10px;font-family:Montserrat,sans-serif;">
-				Konfigurator PACANOSIU BETA 2020.01
+				Configurator PACANOSIU BETA 2020.01
 			</footer>
 		</html>'
 	;
