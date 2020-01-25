@@ -92,8 +92,6 @@
 		$_kreator_plikow=fopen("index.php","w")or die("Unable to open file!");
 		$_przepisanie_indexu=
 			'<?php
-	if($_SERVER["REMOTE_ADDR"]=="::1")
-	{
 		session_start();
 		require_once("config.php");
 		if(!isset($_GET["page"])) 
@@ -104,7 +102,6 @@
 		{    
 			$mp = new ExtensionController($_GET["page"]);    
 		}
-	}
 ?>'
 		;
 		unlink("configurator.php");	
