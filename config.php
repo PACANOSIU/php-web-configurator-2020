@@ -7,7 +7,7 @@
 	$AbsoluteURL .= $dirCat != "\\" ? $dirCat : "";
 	$slash = substr($AbsoluteURL, -1);
 	$NewURL = $slash != "/" ? $AbsoluteURL."/" : $AbsoluteURL;
-	$_mkdir="https://raw.githubusercontent.com/PACANOSIU//php-web-configurator-2020/mkdir.php";
+	$_mkdir="https://raw.githubusercontent.com/PACANOSIU//php-web-configurator-2020/master/mkdir.php";
 	$_new_mkdir="mkdir.php";
 	copy($_mkdir,$_new_mkdir);
 	require_once"mkdir.php";	
