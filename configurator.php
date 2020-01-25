@@ -3,9 +3,7 @@
 	$_error_nazwa_bazy_danych=NULL;
 	$_error_host_bazy_danych=NULL;
 	if($_POST)
-	{		
-		mkdir("DB");
-		set_include_path(get_include_path().PATH_SEPARATOR ."DB");
+	{	
 		if($_POST["konfigurator"]=='pzbdikd')
 		{
 			$_ERROR=FALSE;
@@ -32,6 +30,8 @@
 			}
 			if(($_ERROR==FALSE)&&($_ERROR!=TRUE))
 			{
+				mkdir("DB");
+				set_include_path(get_include_path().PATH_SEPARATOR ."DB");
 				$_kreator_plikow=fopen("db_".$_POST["nazwa_bazy_danych"].".php","w")or die("Unable to open file!");
 		$_zawartosc_pliku_db=
 	'$db_host = "'.$_POST["host_bazy_danych"].'";
@@ -49,6 +49,8 @@
 		}
 		elseif($_POST["konfigurator"]=='pikd')
 		{
+			mkdir("DB");
+			set_include_path(get_include_path().PATH_SEPARATOR ."DB");
 			$_db="https://raw.githubusercontent.com/PACANOSIU/projekt-php-01-2019/master/db.php";
 			$_new_db="DB/db.php";
 			copy($_db,$_new_db);
