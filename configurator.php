@@ -113,9 +113,9 @@
 		{
 			WebIndex::load("IndexIndex");
 			WebHash::load("Level_1");
-			$_encrypted
+			'.$_encrypted.'
 			echo"<br />";
-			$_decrypted
+			'.$_decrypted.'
 		} 
 		else 
 		{    
