@@ -97,8 +97,13 @@
 		copy($_WebHeaderRightMenu,$_new_WebHeaderRightMenu);
 		$_WebHeaderLogoAndTitle="https://raw.githubusercontent.com/PACANOSIU/php-web-configurator-2020/master/CLASS/WebHeaderLogoAndTitle.class.php";
 		$_new_WebHeaderLogoAndTitle="CLASS/WebHeaderLogoAndTitle.class.php";
-		copy($_WebHeaderLogoAndTitle,$_new_WebHeaderLogoAndTitle);
-		$_kreator_plikow=fopen("index.php","w")or die("Unable to open file!");
+		copy($_WebHeaderLogoAndTitle,$_new_WebHeaderLogoAndTitle);		
+		$_WebHash="https://raw.githubusercontent.com/PACANOSIU/php-web-configurator-2020/master/CLASS/Managers/WebHash.class.php";
+		$_new_WebHash="CLASS/Managers/WebHash.class.php";
+		copy($_WebHash,$_new_WebHash);		
+		$_kreator_plikow=fopen("index.php","w")or die("Unable to open file!");		
+		$_encrypted="echo$_encrypted = my_simple_crypt( 'Hello World!', 'SECURE' )";
+		$_decrypted="echo$_decrypted = my_simple_crypt( 'aSttVEZZU2l2ZDJQYzd5cmIxeklSdz09', 'UNSECURE' );";
 		$_przepisanie_indexu=
 			'<?php
 		//Copyright PACANOSIU Development productions :D	
@@ -106,11 +111,15 @@
 		require_once("config.php");
 		if(!isset($_GET["page"])) 
 		{
-			WebIndex::load("IndexIndex");   
+			WebIndex::load("IndexIndex");
+			WebHash::load("Level_1");
+			$_encrypted
+			echo"<br />";
+			$_decrypted
 		} 
 		else 
 		{    
-			$mp = new ExtensionController($_GET["page"]);    
+			$_page_extension = new ExtensionController($_GET["page"]);    
 		}
 ?>'
 		;
