@@ -1,5 +1,6 @@
 <?php
 	//Copyright PACANOSIU Development productions :D
+	session_start();
 	if($_GET)
 	{
 		$_konfigurator="https://raw.githubusercontent.com/PACANOSIU/php-web-configurator-2020/master/configurator.php";
