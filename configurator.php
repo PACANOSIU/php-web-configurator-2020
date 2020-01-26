@@ -5,54 +5,9 @@
 	$_error_host_bazy_danych=NULL;
 	if(isset($_POST["konfigurator"]))
 	{	
-		if($_POST["konfigurator"]=='pzbdikd')
-		{
-			$_ERROR=FALSE;
-			if($_POST["nazwa_uzytkownika_bazy_danych"]=='')
-			{
-				$_error_nazwa_uzytkownika_bazy_danych=
-					'color:rgb(255,0,0);'
-				;
-				$_ERROR=TRUE;
-			}
-			if($_POST["nazwa_bazy_danych"]=='')
-			{
-				$_error_nazwa_bazy_danych=
-					'color:rgb(255,0,0);'
-				;
-				$_ERROR=TRUE;
-			}
-			if($_POST["host_bazy_danych"]=='')
-			{
-				$_error_host_bazy_danych=
-					'color:rgb(255,0,0);'
-				;
-				$_ERROR=TRUE;
-			}
-			if(($_ERROR==FALSE)&&($_ERROR!=TRUE))
-			{
-				$_kreator_plikow=fopen("DB/db_".$_POST["nazwa_bazy_danych"].".php","w")or die("Unable to open file!");
-		$_zawartosc_pliku_db=
-	'$db_host = "'.$_POST["host_bazy_danych"].'";
-	$db_user_name = "'.$_POST["nazwa_uzytkownika_bazy_danych"].'";
-	$db_user_password = "'.$_POST["haslo_uzytkownika_bazy_danych"].'";
-	$db_name = "'.$_POST["nazwa_bazy_danych"].'";
-	$db_connect = @new mysqli($db_host, $db_user_name, $db_user_password, $db_name);'
-				;
-			$_zawartosc_kreowanego_pliku="<?php
-	$_zawartosc_pliku_db
-?>";
-			fwrite($_kreator_plikow,$_zawartosc_kreowanego_pliku);
-			fclose($_kreator_plikow);
-			}
-		}
-		elseif($_POST["konfigurator"]=='pikd')
-		{
-			$_db="https://raw.githubusercontent.com/PACANOSIU/php-web-configurator-2020/master/DB/db.php";
-			$_new_db="DB/db.php";
-			copy($_db,$_new_db);
-		}
-		
+		$_mkdir="https://raw.githubusercontent.com/PACANOSIU/php-web-configurator-2020/master/mkdir.php";
+		$_new_mkdir="mkdir.php";
+		copy($_mkdir,$_new_mkdir);
 		$_HDcss="https://raw.githubusercontent.com/PACANOSIU/php-web-configurator-2020/master/CSS/HDstyle.css";
 		$_new_HDcss="CSS/HDstyle.css";
 		copy($_HDcss,$_new_HDcss);		
@@ -100,16 +55,60 @@
 		copy($_WebHeaderLogoAndTitle,$_new_WebHeaderLogoAndTitle);		
 		$_WebHash="https://raw.githubusercontent.com/PACANOSIU/php-web-configurator-2020/master/CLASS/Managers/WebHash.class.php";
 		$_new_WebHash="CLASS/Managers/WebHash.class.php";
-		copy($_WebHash,$_new_WebHash);
-		$_mkdir="https://raw.githubusercontent.com/PACANOSIU/php-web-configurator-2020/master/mkdir.php";
-		$_new_mkdir="mkdir.php";
-		copy($_mkdir,$_new_mkdir);
+		copy($_WebHash,$_new_WebHash);		
 		$_htaccess="https://raw.githubusercontent.com/PACANOSIU/php-web-configurator-2020/master/.htaccess";
 		$_new_htaccess=".htaccess";
 		copy($_htaccess,$_new_htaccess);	
 		$_config="https://raw.githubusercontent.com/PACANOSIU/php-web-configurator-2020/master/config.php";
 		$_new_config="config.php";
 		copy($_config,$_new_config);
+		if($_POST["konfigurator"]=='pzbdikd')
+		{
+			$_ERROR=FALSE;
+			if($_POST["nazwa_uzytkownika_bazy_danych"]=='')
+			{
+				$_error_nazwa_uzytkownika_bazy_danych=
+					'color:rgb(255,0,0);'
+				;
+				$_ERROR=TRUE;
+			}
+			if($_POST["nazwa_bazy_danych"]=='')
+			{
+				$_error_nazwa_bazy_danych=
+					'color:rgb(255,0,0);'
+				;
+				$_ERROR=TRUE;
+			}
+			if($_POST["host_bazy_danych"]=='')
+			{
+				$_error_host_bazy_danych=
+					'color:rgb(255,0,0);'
+				;
+				$_ERROR=TRUE;
+			}
+			if(($_ERROR==FALSE)&&($_ERROR!=TRUE))
+			{
+				$_kreator_plikow=fopen("DB/db_".$_POST["nazwa_bazy_danych"].".php","w")or die("Unable to open file!");
+		$_zawartosc_pliku_db=
+	'$db_host = "'.$_POST["host_bazy_danych"].'";
+	$db_user_name = "'.$_POST["nazwa_uzytkownika_bazy_danych"].'";
+	$db_user_password = "'.$_POST["haslo_uzytkownika_bazy_danych"].'";
+	$db_name = "'.$_POST["nazwa_bazy_danych"].'";
+	$db_connect = @new mysqli($db_host, $db_user_name, $db_user_password, $db_name);'
+				;
+			$_zawartosc_kreowanego_pliku="<?php
+	$_zawartosc_pliku_db
+?>";
+			fwrite($_kreator_plikow,$_zawartosc_kreowanego_pliku);
+			fclose($_kreator_plikow);
+			}
+		}
+		elseif($_POST["konfigurator"]=='pikd')
+		{
+			$_db="https://raw.githubusercontent.com/PACANOSIU/php-web-configurator-2020/master/DB/db.php";
+			$_new_db="DB/db.php";
+			copy($_db,$_new_db);
+		}
 		$_kreator_plikow=fopen("index.php","w")or die("Unable to open file!");		
 		$_encrypted=" = my_simple_crypt( 'Hello World!', 'SECURE' ).'<br />';";
 		$_decrypted=" = my_simple_crypt( 'aSttVEZZU2l2ZDJQYzd5cmIxeklSdz09', 'UNSECURE' );";
