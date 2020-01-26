@@ -3,7 +3,7 @@
 	$_error_nazwa_uzytkownika_bazy_danych=NULL;
 	$_error_nazwa_bazy_danych=NULL;
 	$_error_host_bazy_danych=NULL;
-	if($_POST["konfigurator"])
+	if(isset($_POST["konfigurator"]))
 	{	
 		if($_POST["konfigurator"]=='pzbdikd')
 		{
