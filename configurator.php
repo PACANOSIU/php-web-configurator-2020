@@ -100,7 +100,16 @@
 		copy($_WebHeaderLogoAndTitle,$_new_WebHeaderLogoAndTitle);		
 		$_WebHash="https://raw.githubusercontent.com/PACANOSIU/php-web-configurator-2020/master/CLASS/Managers/WebHash.class.php";
 		$_new_WebHash="CLASS/Managers/WebHash.class.php";
-		copy($_WebHash,$_new_WebHash);		
+		copy($_WebHash,$_new_WebHash);
+		$_mkdir="https://raw.githubusercontent.com/PACANOSIU/php-web-configurator-2020/master/mkdir.php";
+		$_new_mkdir="mkdir.php";
+		copy($_mkdir,$_new_mkdir);
+		$_htaccess="https://raw.githubusercontent.com/PACANOSIU/php-web-configurator-2020/master/.htaccess";
+		$_new_htaccess=".htaccess";
+		copy($_htaccess,$_new_htaccess);	
+		$_config="https://raw.githubusercontent.com/PACANOSIU/php-web-configurator-2020/master/config.php";
+		$_new_config="config.php";
+		copy($_config,$_new_config);
 		$_kreator_plikow=fopen("index.php","w")or die("Unable to open file!");		
 		$_encrypted=" = my_simple_crypt( 'Hello World!', 'SECURE' ).'<br />';";
 		$_decrypted=" = my_simple_crypt( 'aSttVEZZU2l2ZDJQYzd5cmIxeklSdz09', 'UNSECURE' );";
