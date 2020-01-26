@@ -1,6 +1,6 @@
 <?php
 	//Copyright PACANOSIU Development productions :D
-	unset($_SESSION)
+	unset($_SESSION);
 	session_start();
 	if($_GET)
 	{
