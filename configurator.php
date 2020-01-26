@@ -8,7 +8,7 @@
 		$_mkdir="https://raw.githubusercontent.com/PACANOSIU/php-web-configurator-2020/master/mkdir.php";
 		$_new_mkdir="mkdir.php";
 		copy($_mkdir,$_new_mkdir);
-		require_once"mkdir.php"
+		require_once"mkdir.php";
 		$_HDcss="https://raw.githubusercontent.com/PACANOSIU/php-web-configurator-2020/master/CSS/HDstyle.css";
 		$_new_HDcss="CSS/HDstyle.css";
 		copy($_HDcss,$_new_HDcss);		
