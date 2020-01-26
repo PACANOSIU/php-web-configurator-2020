@@ -1,6 +1,6 @@
 <?php
 	//Copyright PACANOSIU Development productions :D
-	class Secure 
+	class WebHash 
 	{
 		static public function load($_MODULE) 
 		{
